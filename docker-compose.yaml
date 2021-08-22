@@ -1,4 +1,9 @@
-version: "2"
+version: "3"
 services:
   test:
-    image: test  
+    image: test
+    ports: 
+      - "8080:8080"
+  curl:
+    image: curlimages/curl
+    command: http://test:8080      
