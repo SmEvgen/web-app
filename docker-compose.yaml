@@ -3,7 +3,7 @@ services:
   test:
     image: test
     ports: 
-      - "8080:8080"
+      - "80:80"
   curl:
     image: curlimages/curl
-    command: http://test:8080      
+    command: http://test:80      
