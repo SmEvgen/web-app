@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git branch: 'main', url: 'https://github.com/SmEvgen/web-app.git'
                 sh "docker build -t webapp ."
             }
         }
